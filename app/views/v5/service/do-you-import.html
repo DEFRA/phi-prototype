@@ -24,7 +24,7 @@ href: "javascript:window.history.back()"
       <div class="govuk-error-summary__body">
         <ul class="govuk-list govuk-error-summary__list">
           <li>
-            <a href="#import">Select where you are importing {{plantName}} to</a>
+            <a href="#import">Select where you are importing your plant or plant product to</a>
           </li>
         </ul>
       </div>
@@ -35,13 +35,13 @@ href: "javascript:window.history.back()"
         <fieldset class="govuk-fieldset">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading" id="import-h1">
-              Where are you importing {{plantName}} to?
+              Where are you importing your plant or plant product to?
             </h1>
           </legend>
 
           {% if error %}
           <span id="user-type-error" class="govuk-error-message">
-            <span class="govuk-visually-hidden">Error:</span> Select where you are importing {{plantName}} to
+            <span class="govuk-visually-hidden">Error:</span> Select where you are importing your plant or plant product to
           </span>
           {% endif %}
           <div class="govuk-radios">
@@ -59,6 +59,7 @@ href: "javascript:window.history.back()"
                 Northern Ireland
               </label>
             </div>
+            <!--
             <div class="govuk-radios__divider">or</div>
             <div class="govuk-radios__item">
               <input class="govuk-radios__input" id="import-3" name="import" type="radio" value="not-importing" {{
@@ -67,12 +68,16 @@ href: "javascript:window.history.back()"
                 I am not importing it
               </label>
             </div>
+            -->
           </div>
         </fieldset>
       </div>
       <button type="submit" class="govuk-button">
         Continue
       </button>
+      <p class="govuk-heading-s">Get help with this service</p>
+      <p class="govuk-body">If you have any queries or you need technical support, email <a href="mailto:planthealth.Info@apha.gov.uk" class="govuk-link">planthealth.info@apha.gov.uk</a>
+      </p>
     </form>
   </div>
 

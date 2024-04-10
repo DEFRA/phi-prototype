@@ -24,7 +24,7 @@ href: "javascript:window.history.back()"
       <div class="govuk-error-summary__body">
         <ul class="govuk-list govuk-error-summary__list">
           <li>
-            <a href="#searchQuery">Enter the name of a plant, pest or disease</a>
+            <a href="#searchQuery">Enter the name of the plant or plant product you are importing</a>
           </li>
         </ul>
       </div>
@@ -35,13 +35,18 @@ href: "javascript:window.history.back()"
         <fieldset class="govuk-fieldset">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading" id="search-h1">
-              Search for a plant, pest or disease
+              What plant or plant product are you importing?
             </h1>
+            <!--
+            <div id="event-name-hint" class="govuk-hint">
+              You can enter the scientific name or any synonyms or common names
+            </div> -->
           </legend>
+          <p class="govuk-body">You can enter the scientific name or any synonyms or common names.</p>
 
           {% if error %}
           <span id="search-error" class="govuk-error-message">
-            <span class="govuk-visually-hidden">Error:</span> Enter the name of a plant, pest or disease
+            <span class="govuk-visually-hidden">Error:</span> Enter the name of the plant or plant product you are importing
           </span>
           {% endif %}
           {{ xGovukAutocomplete({
@@ -673,8 +678,11 @@ href: "javascript:window.history.back()"
         </fieldset>
       </div>
       <button type="submit" class="govuk-button">
-        Search
+        Continue
       </button>
+      <p class="govuk-heading-s">Get help with this service</p>
+      <p class="govuk-body">If you have any queries or you need technical support, email <a href="mailto:planthealth.Info@apha.gov.uk" class="govuk-link">planthealth.info@apha.gov.uk</a>
+      </p>
     </form>
   </div>
 
