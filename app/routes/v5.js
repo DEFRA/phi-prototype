@@ -302,7 +302,7 @@ module.exports = function (router) {
             }
         });
 
-        res.redirect('/' + version + '/service/search');
+        res.redirect('/' + version + '/service/purpose');
     });
 
 
@@ -331,7 +331,7 @@ module.exports = function (router) {
             }
         });
 
-        res.redirect('/' + version + '/service/search');
+        res.redirect('/' + version + '/service/purpose');
     });
 
     // pinus pinea
@@ -358,7 +358,7 @@ module.exports = function (router) {
             }
         });
 
-        res.redirect('/' + version + '/service/search');
+        res.redirect('/' + version + '/service/purpose');
     });
 
 
